@@ -1,0 +1,28 @@
+.bannarBg {
+
+     padding: 5px;
+     background-image: linear-gradient(to bottom right, #AEEBCE, #DDF7EB);
+}
+
+.banarbox {
+     border: 1px solid rgb(138, 229, 47);
+     padding: 14px 24px;
+     border-radius: 25px;
+     display: flex;
+     align-items: center;
+     background: white;
+    color: black;
+    transition: 0.5s;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.banarbox:hover{
+     color: white;
+     background: black;  
+}
+.cryptoText{
+     background-image: linear-gradient(90deg, #aa28b5, #b9d517);
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+}
