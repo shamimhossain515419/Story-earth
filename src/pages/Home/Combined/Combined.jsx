@@ -20,8 +20,8 @@ const Combined = () => {
                     </div>
 
                     <div className=" max-w-[1000px] mx-auto">
-                         <div className=" my-10 flex justify-between gap-6">
-                              <div className=" max-w-[300px]">
+                         <div className=" my-10 md:flex justify-between gap-6">
+                              <div className=" max-w-[300px] p-1 ">
                                    <Slider1></Slider1>
                               </div>
                               <div className="   flex justify-center items-center">
@@ -31,9 +31,17 @@ const Combined = () => {
                                    <Slider2></Slider2>
                               </div>
                          </div>
+                         <div className=" text-center ">
+                              <p className=" text-base md:text-xl lg:text-2xl    mt-10  font-medium"> Manage Multiple  <span className="    text-3xl font-semibold "> Custodial</span> And  <span className="    text-3xl font-semibold "> Non-Custodial</span> Wallets Under  <span className="    text-3xl font-semibold "> One App</span>
+                                   <br /> Smoothly Switch Between Wallets Under Accounts</p>
+                              <h1 className="text-xl font-semibold md:text-2xl lg:text-4xl my-4 "> Get All Your Crypto Needs Covered</h1>
+                         </div>
                     </div>
 
                </Container>
+
+
+
 
           </div>
      );

@@ -89,7 +89,7 @@ const SecurityServices = () => {
                                              </div>
                                         </div>
 
-                                        <div className=' hidden  xl:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2    '>
+                                        <div className=' hidden  md:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2    '>
                                              <img className=' max-w-[200px]' src={imagePhone} alt="" />
                                         </div>
                                    </div>
