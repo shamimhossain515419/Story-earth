@@ -1,0 +1,6 @@
+.btn-gradient {
+     background: linear-gradient(white, white) padding-box,
+                 linear-gradient(to right, #64D7FA, #A9E63A) border-box;
+     border-radius: 25px;
+     border: 4px solid transparent;
+   }
