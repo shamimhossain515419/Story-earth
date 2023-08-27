@@ -1,5 +1,6 @@
 import Banner from "../Banner/Banner";
 import Blockchains from "../Blockchains/Blockchains";
+import Bots from "../Bots/Bots";
 import Combined from "../Combined/Combined";
 import Exchange from "../Exchange/Exchange";
 import SecurityServices from "../SecurityServices/SecurityServices";
@@ -22,6 +23,9 @@ const Home = () => {
                <Blockchains></Blockchains>
                <Exchange></Exchange>
                <Tools></Tools>
+               <div>
+                    <Bots></Bots>
+               </div>
           </div>
      );
 };
