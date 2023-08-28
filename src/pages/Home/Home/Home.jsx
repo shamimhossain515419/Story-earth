@@ -3,9 +3,11 @@ import Blockchains from "../Blockchains/Blockchains";
 import Bots from "../Bots/Bots";
 import Combined from "../Combined/Combined";
 import Exchange from "../Exchange/Exchange";
+import Feedback from "../Feeadback/Feedback";
 import SecurityServices from "../SecurityServices/SecurityServices";
 import Tools from "../Tools/Tools";
 import UltimateStoey from "../UltimateStory/UltimateStoey";
+import FAQ from "./FAQ/FAQ";
 
 
 const Home = () => {
@@ -26,6 +28,8 @@ const Home = () => {
                <div>
                     <Bots></Bots>
                </div>
+               <Feedback></Feedback>
+               <FAQ></FAQ>
           </div>
      );
 };
