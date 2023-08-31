@@ -1,12 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa'
 import './Navbar.css'
 import Language from "./Language/language";
+import { AuthContact } from "../Component/Authprovider/Authprovider";
 const Navbar = () => {
 
-     const [isOpen, setIsOpen] = useState(false);
+     // const [isOpen, setIsOpen] = useState(false);
      const [show, setShow] = useState(false);
+     const { user } = useContext(AuthContact);
+     console.log(user);
 
      // useEffect funtion 
      useEffect(() => {
@@ -48,9 +51,22 @@ const Navbar = () => {
                     </div>
                     {/* Navbar Right section  */}
                     <div className="  flex items-center gap-1 ">
-                         <div >
-                              <h1 className=" cursor-pointer Nabarbutton bg-[#9be957] font-medium  capitalize text-black text-sm md:text-lg  rounded-2xl"> Start my Swallet </h1>
-                         </div>
+
+                         {
+                              user ? <><div className=" flex  gap-2 items-center cursor-pointer Nabarbutton bg-[#9be957] font-medium  capitalize text-black text-sm md:text-lg  rounded-2xl">
+                                   {
+                                        user?.photoURL ? <> <img className="h-12 w-12 rounded-full" src={user?.photoURL} alt="" /> </> : <>  <div className=" p-2  text-xl font-extrabold text-[#fff] bg-black rounded-full uppercase"> {user.email.slice(0, 2)} </div> </>
+                                   }
+                                   <div>
+                                        <h1 className=" text-base" > {user.email.slice(0, 7)}{user?.uid.slice(0, 6)} </h1>
+                                        <h1 className=" text-sm">ID: {user?.metadata?.createdAt} </h1>
+                                   </div>
+                              </div></> : <> <div>
+                                   <h1 className=" cursor-pointer Nabarbutton bg-[#9be957] font-medium  capitalize text-black text-sm md:text-lg  rounded-2xl"> Start my Swallet </h1>
+                              </div></>
+                         }
+
+
                          <div className=" hidden lg:block">
                               <Language></Language>
                          </div>
